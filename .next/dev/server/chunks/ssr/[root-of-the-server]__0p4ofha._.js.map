@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///D:/nextjs-course-ready-projects/13-cookies-proxy-auth-demo/app/page.tsx"],"sourcesContent":["import Link from \"next/link\"; export default function Page(){return <main><h1>Auth Demo</h1><Link href=\"/login\">Login</Link></main>}"],"names":["Page","href"],"mappings":";;;;;AAAA;;;AAA6C,SAASA;IAAO,qBAAO,8OAAC;;0BAAK,8OAAC;0BAAG;;;;;;0BAAc,8OAAC,0LAAI;gBAACC,MAAK;0BAAS;;;;;;;;;;;;AAAmB"}}]
+}

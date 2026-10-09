@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 106, "column": 0}, "map": {"version":3,"sources":["file:///D:/nextjs-course-ready-projects/13-cookies-proxy-auth-demo/proxy.ts"],"sourcesContent":["import { NextRequest, NextResponse } from \"next/server\";\n\nexport function proxy(request: NextRequest) {\n  const session = request.cookies.get(\"demo_session\")?.value;\n  if (request.nextUrl.pathname.startsWith(\"/dashboard\") && session !== \"logged-in\") {\n    return NextResponse.redirect(new URL(\"/login\", request.url));\n  }\n  return NextResponse.next();\n}\n\nexport const config = { matcher: [\"/dashboard/:path*\"] };\n"],"names":["proxy","request","session","cookies","get","value","nextUrl","pathname","startsWith","redirect","URL","url","next","config","matcher"],"mappings":";;;;;;AAAA;;AAEO,SAASA,MAAMC,OAAoB;IACxC,MAAMC,UAAUD,QAAQE,OAAO,CAACC,GAAG,CAAC,iBAAiBC;IACrD,IAAIJ,QAAQK,OAAO,CAACC,QAAQ,CAACC,UAAU,CAAC,iBAAiBN,YAAY,aAAa;QAChF,OAAO,8IAAY,CAACO,QAAQ,CAAC,IAAIC,IAAI,UAAUT,QAAQU,GAAG;IAC5D;IACA,OAAO,8IAAY,CAACC,IAAI;AAC1B;AAEO,MAAMC,SAAS;IAAEC,SAAS;QAAC;KAAoB;AAAC"}}]
+}

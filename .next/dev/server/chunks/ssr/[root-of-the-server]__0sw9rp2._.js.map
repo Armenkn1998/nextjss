@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///D:/nextjs-course-ready-projects/13-cookies-proxy-auth-demo/app/dashboard/page.tsx"],"sourcesContent":["import { logout } from \"../actions\";\nexport default function Page(){return <main><h1>Protected Dashboard</h1><div className=\"card\">Դու մուտք ես գործել։</div><form action={logout}><button>Logout</button></form></main>}\n"],"names":["Page","className","action"],"mappings":";;;;;AAAA;;;AACe,SAASA;IAAO,qBAAO,8OAAC;;0BAAK,8OAAC;0BAAG;;;;;;0BAAwB,8OAAC;gBAAIC,WAAU;0BAAO;;;;;;0BAA0B,8OAAC;gBAAKC,QAAQ,wHAAM;0BAAE,cAAA,8OAAC;8BAAO;;;;;;;;;;;;;;;;;AAA6B"}}]
+}

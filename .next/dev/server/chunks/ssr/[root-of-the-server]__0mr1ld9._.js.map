@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///D:/nextjs-course-ready-projects/13-cookies-proxy-auth-demo/app/login/page.tsx"],"sourcesContent":["import { login } from \"../actions\";\nexport default async function Page({searchParams}:{searchParams:Promise<{error?:string}>}){\n  const {error}=await searchParams;\n  return <main><h1>Login</h1>{error && <p>Սխալ login կամ password</p>}<form className=\"card\" action={login}>\n    <label>Username</label><input name=\"username\" defaultValue=\"admin\"/>\n    <label>Password</label><input name=\"password\" type=\"password\" defaultValue=\"1234\"/>\n    <button>Մուտք</button>\n  </form></main>\n}\n"],"names":["Page","searchParams","error","className","action","name","defaultValue","type"],"mappings":";;;;;AAAA;;;AACe,eAAeA,KAAK,EAACC,YAAY,EAAyC;IACvF,MAAM,EAACC,KAAK,EAAC,GAAC,MAAMD;IACpB,qBAAO,8OAAC;;0BAAK,8OAAC;0BAAG;;;;;;YAAWC,uBAAS,8OAAC;0BAAE;;;;;;0BAA4B,8OAAC;gBAAKC,WAAU;gBAAOC,QAAQ,uHAAK;;kCACtG,8OAAC;kCAAM;;;;;;kCAAgB,8OAAC;wBAAMC,MAAK;wBAAWC,cAAa;;;;;;kCAC3D,8OAAC;kCAAM;;;;;;kCAAgB,8OAAC;wBAAMD,MAAK;wBAAWE,MAAK;wBAAWD,cAAa;;;;;;kCAC3E,8OAAC;kCAAO;;;;;;;;;;;;;;;;;;AAEZ"}}]
+}
